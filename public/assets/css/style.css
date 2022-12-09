@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+body{
+    background-color: #F5F5F5 !important;
+    font-family: 'Poppins' !important;
+}
+nav{
+    width: 100%;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: -1px 3px 6px rgb(0 0 0 / 12%);
+}
+.NavContainer{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+}
+nav .NavLogo a{
+    margin: 0;
+    font-family: 'Agency FB';
+    font-size: 2em;
+    font-weight: bold;
+    color: #333333;
+    text-decoration: none;
+}
+nav .NavLogo span{
+    color: #0A1A68;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+nav ul li{
+    margin: 15px 15px 0 15px;
+    color: #4c4f53;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333333;
+}
+nav ul li a:hover{
+    color: #333333;
+}
+nav ul li a i{
+    margin: 0;
+    color: rgb(209, 54, 54);
+    font-size: 1.8em;
+}
+.wishlistIcon{
+    position: relative;
+}
+.wishlistCount{
+    position: absolute;
+    top: -10px;
+    left: 22px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    border-radius: 60%;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+.wishlistCount span{
+    font-size: 0.7em;
+    margin: 0;
+}
+header{
+    width: min(75% - 2rem);
+    margin-inline: auto;
+    margin-top: 20px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/back5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    position: relative;
+    border-radius: 10px;
+}
+.HeaderTxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.HeaderTxt h1{
+    color: white;
+    font-weight: 600;
+    font-size: 3.1em;
+    font-family: 'Poppins';
+}
+.HaederSearch{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+.HaederSearch input{
+    width: 350px;
+    height: 40px;
+    padding: 0 10px;
+    outline: none;
+    border: 1px solid rgba(51, 51, 51, 0.181);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.HaederSearchIcon{
+    background-color: #0B1552;
+    color: white;
+    padding: 8px 20px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.FooterOfHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.FooterOfHeader h1{
+    font-size: 1.2em;
+}
+.FooterOfHeaderCategory{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.FooterOfHeaderCategory span{
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid white;
+    border-radius: 2px;
+    color: white;
+    font-size: 0.8em;
+}
+@media only screen and (max-width: 545px) {
+    nav .NavLogo a{
+        font-size: 1.6em;
+    }
+    nav ul li a i{
+        font-size: 1.6em;
+    }
+}
+@media only screen and (max-width: 363px) {
+    nav .NavLogo a{
+        font-size: 1.4em;
+    }
+    nav ul li a i{
+        font-size: 1.4em;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    header{
+        width: min(80% - 2rem);
+    }
+    .HeaderTxt h1{
+        font-size: 2.8em;
+    }
+    .HaederSearch input{
+        width: 320px;
+    }
+
+    .FooterOfHeader h1{
+        font-size: 1em;
+    }
+
+    .FooterOfHeaderCategory span{
+        font-size: 0.6em;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    header{
+        width: min(85% - 2rem);
+    }
+    .HeaderTxt h1{
+        font-size: 2.4em;
+    }
+    .HaederSearch input{
+        width: 300px;
+    }
+
+    .FooterOfHeader h1{
+        font-size: 0.8em;
+    }
+
+    .FooterOfHeaderCategory span{
+        font-size: 0.5em;
+    }
+}
+@media only screen and (max-width: 600px) {
+    header{
+        width: min(90% - 2rem);
+    }
+    .HeaderTxt h1{
+        font-size: 2.2em;
+    }
+    .HaederSearch input{
+        width: 280px;
+        height: 38px;
+    }
+}
+@media only screen and (max-width: 506px) {
+    header{
+        width: min(95% - 2rem);
+    }
+    .HeaderTxt h1{
+        font-size: 2em;
+    }
+    .HaederSearch input{
+        width: 230px;
+        height: 35px;
+    }
+    .FooterOfHeader h1{
+        font-size: 0.7em;
+    }
+
+    .FooterOfHeaderCategory span{
+        font-size: 0.4em;
+    }
+}
+
+@media only screen and (max-width: 418px) {
+    header{
+        width: min(100% - 1rem);
+    }
+    .HeaderTxt h1{
+        font-size: 2em;
+    }
+    .HaederSearch input{
+        width: 200px;
+        height: 32px;
+    }
+    .FooterOfHeader h1{
+        font-size: 0.7em;
+    }
+
+    .FooterOfHeaderCategory span{
+        font-size: 0.4em;
+    }
+}
+
+/* Products Card */
+.ProductsContainer{
+    width: min(75% - 2rem);
+    margin-inline: auto;
+    margin-top: 100px;
+}
+.ProductsContainerHaeder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ProductsContainerHaeder h1{
+    color: #333333;
+    margin: 0;
+}
+.ProductsContainerHaeder hr{
+    width: 6%;
+    background-color: #0B1552;
+    border: none;
+    margin: 0;
+}
+.ProductsContainerHaeder p{
+    margin-top: 15px;
+    text-align: center;
+}
+.ProductsCardContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.ProductsCard{
+    width: 400px;
+    margin: 10px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: -1px 3px 6px rgb(0 0 0 / 12%);
+}
+.ProductsCardHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ProductsCardHeader img{
+    width: 200px;
+    height: 180px;
+    object-fit: cover;
+}
+.ProductsCardContent{
+    margin-top: 10px;
+    padding: 0 20px;
+}
+.ProductsCardContent a{
+    text-decoration: none;
+    color: black;
+}
+.ProductsCardContent a:hover{
+    color: black;
+}
+.ProductsCardContent h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+.ProductsCardContentDetails{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.ProductsCardContentDetails span{
+    margin-right: 10px;
+    font-size: 14px;
+}
+.ProductsCardContent p{
+    font-size: 14px;
+}
+.ProductsCardFooter{
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.ProductsCardFooterSatr i{
+    color: #0B1552;
+    cursor: pointer;
+}
+.ProductsCardFooterWishlist i{
+    font-size: 24px;
+    cursor: pointer;
+}
+.ProductsCardFooterWishlist i:hover{
+    color: rgb(196, 46, 46);
+}
+
+
+/* View Products Page */
+.ViewProductsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: -1px 3px 6px rgb(0 0 0 / 12%);
+}
+.ViewProductsContainerImg{
+    margin: 0 80px 0 0;
+}
+.ViewProductsContainerImg img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+.ViewProductsContainerDetails{
+    align-self: flex-start;
+    margin: 0 0 0 30px;
+}
+.ViewProductsContainerDetails p{
+    font-size: 1.2em;
+}
+.ViewProductsContainerDetails h2{
+    color: red;
+}
+.ViewProductsContainerDetailsCate{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+.ViewProductsContainerDetailsCate span{
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+@media only screen and (max-width: 994px) {
+    .ViewProductsContainer{
+        justify-content: space-around;
+        padding: 20px 10px;
+    }
+    .ViewProductsContainerImg{
+        margin: 0 !important;
+    }
+    .ViewProductsContainerDetails{
+        margin: 0 !important;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .ViewProductsContainerImg{
+        margin: 0 !important;
+    }
+    .ViewProductsContainerDetails{
+        margin: 0 !important;
+    }
+}
+
+/* Delete msg */
+.delete-msg{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Wishlist Page */
+.WishlistProducts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.WishlistProducts h1{
+    text-align: center;
+    margin-top: 20px;
+}
